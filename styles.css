@@ -1,5 +1,7 @@
 * {
-  user-select: none
+  user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 html, body {
@@ -20,7 +22,7 @@ html, body {
   .startBtn {
     background: none;        /* remove background */
     border: none;            /* remove border */
-    color: rgb(197, 197, 89);           /* yellow text */
+    color: rgba(197, 197, 89, 0.5);           /* yellow text */
     font-size: 10vw;         /* bigger text if you want */
     cursor: pointer;         /* show pointer on touch/click */
     font-family: sans-serif; /* optional font style */
@@ -29,7 +31,13 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     padding: 0;              /* remove default padding */
+    animation: blink 1s infinite;
   }
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
   
 
 

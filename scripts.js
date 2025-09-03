@@ -8,7 +8,10 @@ const anim2Video = document.getElementById("anim2Video");
 const anim3 = document.getElementById("anim3");
 const anim3Video = document.getElementById("anim3Video");
 const static2 = document.getElementById('static2');
+const music = document.getElementById('background-music');
+const spraySound = document.getElementById('spray');
 
+music.play();
 
 startBtn.addEventListener("click", () => {
     // hide start btn and static background
@@ -33,6 +36,7 @@ anim1Video.addEventListener('ended', () => {
             holdText.style.display = "none";
             anim2.style.display = "block";
             anim2Video.play();
+            spraySound.play();
         }
     }
 
@@ -40,6 +44,8 @@ anim1Video.addEventListener('ended', () => {
         if (holding) {
             holding = false;
             holdText.style.display = "block";
+            spraySound.pause();
+            spraySound.currentTime = 0;
     
             // Reverse the video
             if (!anim2Video.ended) {
@@ -57,6 +63,7 @@ anim1Video.addEventListener('ended', () => {
     document.addEventListener('mouseup', stopHold);
 
     anim2Video.addEventListener("ended", () => {
+        spraySound.pause();
         document.removeEventListener("touchstart", startHold);
         document.removeEventListener('touchend', stopHold);
 
