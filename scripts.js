@@ -11,7 +11,6 @@ const static2 = document.getElementById('static2');
 const music = document.getElementById('background-music');
 const spraySound = document.getElementById('spray');
 
-music.play();
 
 startBtn.addEventListener("click", () => {
     // hide start btn and static background
