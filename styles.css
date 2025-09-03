@@ -19,6 +19,7 @@ html, body {
   }
   
   .startBtn {
+    user-select: none;
     background: none;        /* remove background */
     border: none;            /* remove border */
     color: rgba(197, 197, 89, 0.5);           /* yellow text */
