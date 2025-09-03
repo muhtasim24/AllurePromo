@@ -21,6 +21,7 @@ anim1Video.addEventListener('ended', () => {
     holdText.style.display = "block";
 
     // holding animation
+    // test
     let holding = false;
 
     const startHold = () => {
