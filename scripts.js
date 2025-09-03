@@ -17,7 +17,7 @@ startBtn.addEventListener("click", () => {
     // hide start btn and static background
     startBtn.style.display = "none";
     static1.style.display = "none";
-
+    music.play();
     // play animation 1
     anim1.style.display = "block";
     anim1Video.play();
