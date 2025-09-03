@@ -1,12 +1,17 @@
 * {
   user-select: none;
   -webkit-user-drag: none;
+  -webkit-user-select: none;   /* disable text selection */
+  -webkit-touch-callout: none; /* disable long-press menu (iOS) */
 }
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    -webkit-touch-callout: none; /* disable long-press menu (iOS) */
+    user-select: none;
+    -webkit-user-select: none;   /* disable text selection */
   }
   
   .static1, .static2 {
