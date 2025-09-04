@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('/pressStart2.ttf') format('truetype');
+}
+
 * {
   user-select: none !important;
   -webkit-user-select: none !important;
@@ -28,19 +33,21 @@ html, body {
   }
   
   .startBtn {
+    font-family: 'PressStart2P', sans-serif;
     user-select: none;
     background: none;        /* remove background */
     border: none;            /* remove border */
     color: rgba(197, 197, 89, 0.5);           /* yellow text */
     font-size: 10vw;         /* bigger text if you want */
     cursor: pointer;         /* show pointer on touch/click */
-    font-family: sans-serif; /* optional font style */
     position: absolute;
     top: 10%;             /* place near bottom */
     left: 50%;
     transform: translateX(-50%);
     padding: 0;              /* remove default padding */
-    animation: blink 1s infinite;
+    animation: blink 2s infinite;
+
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   }
 
 @keyframes blink {
@@ -72,16 +79,20 @@ html, body {
   }
 
   #holdText {
+    font-family: 'PressStart2P', sans-serif;
     position: fixed;
     top: 15%;
     left: 50%;
-    width: 60vw;
+    width: 70vw;
     transform: translate(-50%, -50%);
-    color: rgb(194, 194, 114);
+    color: rgb(197, 197, 89);           /* yellow text */
     font-size: 10vw;
     text-align: center;
     z-index: 100;
     display: none; /* hidden until Animation1 ends */
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8);
+
+    animation: blink 2s infinite;
   }
   
   #anim2, #anim3 {
