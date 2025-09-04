@@ -122,19 +122,24 @@ html, body {
 
 .cloud {
   position: absolute;
-  width: 200px; /* adjust size */
+  width: 50vw; /* adjust size */
   opacity: 0.7;
-  animation: moveClouds 1s linear infinite;
+  z-index: 999999;
 }
 
-.cloud1 { top: 10%; left: -250px; animation-delay: 0s; }
-.cloud2 { top: 30%; left: -250px; animation-delay: 1s; }
-.cloud3 { top: 50%; left: -250px; animation-delay: 2s; }
-.cloud4 { top: 70%; left: -250px; animation-delay: 3s; }
-.cloud5 { top: 20%; left: -250px; animation-delay: 4s; }
 
-@keyframes moveClouds {
-  from { transform: translateX(0); }
+.cloud1 { top: 20%; animation: moveRight 5s linear infinite; }
+.cloud2 { top: 30%; animation: moveLeft 4s linear infinite; }
+.cloud3 { top: 50%; animation: moveRight 4s linear infinite; }
+.cloud4 { top: 70%; animation: moveLeft 5s linear infinite; }
+.cloud5 { top: 40%; animation: moveRight 6s linear infinite; }
+  
+@keyframes moveRight {
+  from { transform: translateX(-60vw); }
   to { transform: translateX(120vw); } /* move across screen */
 }
-  
+
+@keyframes moveLeft {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-120vw); } /* move across screen */
+}
