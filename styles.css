@@ -97,3 +97,21 @@ html, body {
     height: 100%;
     object-fit: cover;
   }
+
+  #cloudOverlay {
+    position: fixed;   /* stays in place across all pages */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* clouds won’t block clicks/touches */
+    z-index: 9999;     /* keep on top of everything */
+    overflow: hidden;
+  }
+  
+  #cloudOverlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* scale to cover screen */
+  }
+  
