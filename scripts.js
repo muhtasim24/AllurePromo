@@ -7,6 +7,8 @@ const anim2 = document.getElementById("anim2");
 const anim2Video = document.getElementById("anim2Video");
 const anim3 = document.getElementById("anim3");
 const anim3Video = document.getElementById("anim3Video");
+const anim4 = document.getElementById("anim4");
+const anim4Video = document.getElementById("anim4Video");
 const static2 = document.getElementById('static2');
 const music = document.getElementById('background-music');
 const spraySound = document.getElementById('spray');
@@ -73,5 +75,17 @@ anim1Video.addEventListener('ended', () => {
 
         anim3.style.display = "block";
         anim3Video.play();
+
+        anim3Video.addEventListener('ended', () => {
+            // wait 1 second (1000ms) before moving on
+            setTimeout(() => {
+                // hide anim3
+                anim3.style.display = "none";
+
+                // show anim4
+                anim4.style.display = "block";
+                anim4Video.play();
+            }, 1000); // 1000ms = 1 second
+        })
     });
 })
