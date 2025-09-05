@@ -12,11 +12,13 @@ const anim4Video = document.getElementById("anim4Video");
 const static2 = document.getElementById('static2');
 const music = document.getElementById('background-music');
 const spraySound = document.getElementById('spray');
+const americanText = document.getElementById('americanText');
 
 
 startBtn.addEventListener("click", () => {
     // hide start btn and static background
     startBtn.style.display = "none";
+    americanText.style.display = "none";
     static1.style.display = "none";
     music.play();
     // play animation 1
