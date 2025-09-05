@@ -29,7 +29,6 @@ startBtn.addEventListener("click", () => {
 })
 
 anim1Video.addEventListener('ended', () => {
-    anim1.style.display = "none";
     holdText.style.display = "block";
 
     // holding animation
