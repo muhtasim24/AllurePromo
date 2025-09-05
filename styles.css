@@ -65,6 +65,7 @@ html, body {
   align-items: center;
   position: relative;
   top: 46%;
+  margin: 0;
 }
 
 
@@ -153,4 +154,31 @@ html, body {
 @keyframes moveLeft {
   from { transform: translateX(100vw); }
   to { transform: translateX(-120vw); } /* move across screen */
+}
+#replay {
+  position: fixed;          /* floats on screen */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;            /* make sure it's above videos */
+  display: none;
+}
+
+.replayBtn {
+    font-family: 'PressStart2P', sans-serif;
+    user-select: none;
+    background: none;        /* remove background */
+    border: none;            /* remove border */
+    color: rgba(197, 197, 89, 0.8);           /* yellow text */
+    font-size: 10vw;         /* bigger text if you want */
+    cursor: pointer;         /* show pointer on touch/click */
+    position: absolute;
+    top: 10%;             /* place near bottom */
+    transform: translateX(-50%);
+    padding: 0;              /* remove default padding */
+    
+    -webkit-tap-highlight-color: transparent; /* iOS Safari */
+    outline: none;
+
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }

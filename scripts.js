@@ -13,6 +13,8 @@ const static2 = document.getElementById('static2');
 const music = document.getElementById('background-music');
 const spraySound = document.getElementById('spray');
 const americanText = document.getElementById('americanText');
+const replay = document.getElementById('replay');
+const replayBtn = document.getElementById('replayBtn');
 
 
 startBtn.addEventListener("click", () => {
@@ -88,6 +90,14 @@ anim1Video.addEventListener('ended', () => {
                 anim4.style.display = "block";
                 anim4Video.play();
             }, 1000); // 1000ms = 1 second
+
+            anim4Video.addEventListener('ended', () => {
+                replay.style.display = "block";
+                replayBtn.style.display = "block";
+                replayBtn.addEventListener("click", () => {
+                    window.location.reload();
+                });
+            });
         })
     });
 })
