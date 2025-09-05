@@ -75,6 +75,7 @@ anim1Video.addEventListener('ended', () => {
         document.removeEventListener("mousedown", startHold);
         document.removeEventListener('mouseup', stopHold);
         anim2.style.display = "none";
+        anim2Video.style.display = "none";
         holdText.style.display = "none";
 
         anim3.style.display = "block";
