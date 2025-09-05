@@ -136,7 +136,13 @@ html, body {
   position: absolute;
   width: 50vw; /* adjust size */
   opacity: 0.7;
-  z-index: 999999;
+  z-index: 1000;
+  user-select: none;          /* prevent text/image selection */
+  -webkit-user-drag: none;    /* disable dragging on Safari/Chrome */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;       /* prevents accidental taps/long-press */
 }
 
 
