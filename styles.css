@@ -75,28 +75,6 @@ html, body {
 }
 
 
-/* width: 100vw;
-height: 35vh;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-top: 27.5%;
-left: 0%; 
-
-
-  width: 100vw;
-  height: 37.5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 62.5%;
-  left: 0%;
-  margin: 0;
-  opacity: 0.68;
-  */
-
 /* Animation 1 video full-screen */
 #anim1 {
     display: none;
@@ -215,7 +193,7 @@ left: 0%;
     outline: none;
 
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-    z-index: 30000; 
+    z-index: 2000; 
 }
 
 #footerText {
@@ -228,7 +206,7 @@ left: 0%;
   font-size: 3vw;       /* scales with screen size */
   color: rgba(255, 255, 255, 0.8);
   text-shadow: 2px 2px 5px black;   /* glow/shadow for visibility */
-  z-index: 10000;       /* stays above all animations */
+  z-index: 9000000;       /* stays above all animations */
   pointer-events: none; /* text won’t block clicks */
   word-spacing: -5px;
 }
