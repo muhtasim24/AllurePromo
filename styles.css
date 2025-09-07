@@ -201,7 +201,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5%;           /* distance from bottom */
+  bottom: 2%;           /* distance from bottom */
   left: 25%;
   font-family: 'PressStart2P', sans-serif;  /* match your font */
   font-size: 3vw;       /* scales with screen size */
