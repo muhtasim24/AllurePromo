@@ -220,9 +220,10 @@ left: 0%;
 
 #footerText {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   bottom: 8%;           /* distance from bottom */
-  left: 20%;            /* center horizontally */
   font-family: 'PressStart2P', sans-serif;  /* match your font */
   font-size: 3vw;       /* scales with screen size */
   color: rgba(255, 255, 255, 0.8);
