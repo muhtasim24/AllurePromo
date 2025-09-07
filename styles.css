@@ -37,7 +37,7 @@ html, body {
     user-select: none;
     background: none;        /* remove background */
     border: none;            /* remove border */
-    color: rgba(197, 197, 89, 0.5);           /* yellow text */
+    color: rgba(197, 197, 89, 1);           /* yellow text */
     font-size: 10vw;         /* bigger text if you want */
     cursor: pointer;         /* show pointer on touch/click */
     position: absolute;
@@ -50,6 +50,7 @@ html, body {
     outline: none;
 
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    z-index: 9999;
   }
 
 @keyframes blink {
@@ -58,6 +59,32 @@ html, body {
 }
 
 .americanText {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 0%;
+  margin: 0;
+  opacity: 0.4;
+  z-index: 2;
+
+  
+}
+
+
+/* width: 100vw;
+height: 35vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 27.5%;
+left: 0%; 
+
+
   width: 100vw;
   height: 37.5vh;
   display: flex;
@@ -68,18 +95,7 @@ html, body {
   left: 0%;
   margin: 0;
   opacity: 0.68;
-
-  
-}
-
-/* width: 100vw;
-height: 35vh;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-top: 27.5%;
-left: 0%; */
+  */
 
 /* Animation 1 video full-screen */
 #anim1 {
