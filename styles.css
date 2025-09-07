@@ -65,7 +65,7 @@ html, body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 2%;
+  top: 1%;
   left: 0%;
   margin: 0;
   opacity: 0.4;
@@ -216,4 +216,18 @@ left: 0%;
 
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     z-index: 30000; 
+}
+
+#footerText {
+  display: flex;
+  position: relative;
+  bottom: 8%;           /* distance from bottom */
+  left: 20%;            /* center horizontally */
+  font-family: 'PressStart2P', sans-serif;  /* match your font */
+  font-size: 3vw;       /* scales with screen size */
+  color: white;
+  text-shadow: 2px 2px 5px black;   /* glow/shadow for visibility */
+  z-index: 10000;       /* stays above all animations */
+  pointer-events: none; /* text won’t block clicks */
+  word-spacing: -5px;
 }
