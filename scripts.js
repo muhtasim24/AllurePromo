@@ -33,6 +33,8 @@ startBtn.addEventListener("click", () => {
     // play animation 1
     anim1.style.display = "block";
     anim1Video.play();
+    anim4Video.pause();
+    anim4Video.currentTime = 0;
 })
 
 anim1Video.addEventListener('ended', () => {
