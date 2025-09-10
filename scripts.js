@@ -15,6 +15,7 @@ const spraySound = document.getElementById('spray');
 const americanText = document.getElementById('americanText');
 const replay = document.getElementById('replay');
 const replayBtn = document.getElementById('replayBtn');
+const cloudOverlay = document.getElementById('cloud-overlay');
 
 
 startBtn.addEventListener("click", () => {
@@ -22,7 +23,13 @@ startBtn.addEventListener("click", () => {
     startBtn.style.display = "none";
     americanText.style.display = "none";
     static1.style.display = "none";
+    cloudOverlay.style.display = "block";
     music.play();
+    // show all clouds inside overlay
+    const clouds = cloudOverlay.querySelectorAll('.cloud');
+    clouds.forEach(cloud => {
+        cloud.style.display = "block";
+    });
     // play animation 1
     anim1.style.display = "block";
     anim1Video.play();
