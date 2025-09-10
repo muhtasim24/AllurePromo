@@ -211,3 +211,108 @@ html, body {
   pointer-events: none; /* text won’t block clicks */
   word-spacing: -5px;
 }
+
+@media (min-width: 800px) {
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .static1, .static2 {
+    width: 30vw;
+    height: 100%;
+  }
+  
+  .startBtn {
+    font-size: 2.5vw;
+  }
+
+  .americanText {
+    width: 30vw;
+    height: 20vh;
+  }
+
+  /* Animation 1 video full-screen */
+  #anim1 {
+    width: 30vw;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #anim1 video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #holdText {
+    width: 20vw;
+    font-size: 2vw;
+  }
+
+    
+  #anim2, #anim3, #anim4 {
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw; 
+    height: 100%;
+  }
+
+  #anim2 video, #anim3 video, #anim4 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cloud-overlay {
+  position: fixed;  /* always stays in place */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 100%;
+  overflow: visible;
+  }
+
+  .cloud {
+    position: absolute;
+    width: 15vw; /* adjust size */
+  }
+
+  .cloud1 { top: 20%; animation: moveRight 5s linear infinite; }
+  .cloud2 { top: 30%; animation: moveLeft 4s linear infinite; }
+  .cloud3 { top: 50%; animation: moveRight 4s linear infinite; }
+  .cloud4 { top: 70%; animation: moveLeft 5s linear infinite; }
+  .cloud5 { top: 40%; animation: moveRight 6s linear infinite; }
+
+  #replay {
+    position: fixed;          /* floats on screen */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;            /* make sure it's above videos */
+    display: none;
+  }
+
+  .replayBtn {
+      font-size: 2.5vw;         /* bigger text if you want */
+  }
+
+  #footerText {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5vw;       /* scales with screen size */
+  }
+    
+
+}
